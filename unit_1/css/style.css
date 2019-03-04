@@ -4,6 +4,9 @@ body {
 h1 {
 	color: #690DAF
 }
-p {
+p, ul li {
 	color: #054B66
+}
+a {
+	color: #064A65
 }
