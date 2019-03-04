@@ -1,10 +1,10 @@
 body {
 	background-color: #81F4E1
 }
-h1 {
+h1, h3 {
 	color: #690DAF
 }
-p, ul li {
+p, li {
 	color: #054B66
 }
 a {
