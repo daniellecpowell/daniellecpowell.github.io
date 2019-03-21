@@ -1,29 +1,68 @@
-body {
-	background-size: cover;
-	background: url("../images/kansas-city-photographer-katz-family-portraits-16-lyp.jpg");
+body, html {
+  height: 100%;
+	margin: 0;
 }
-
+.bg {
+  background-image: url("../images/kansas-city-photographer-katz-family-portraits-16-lyp.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 #logo {
-	object-position: left;
-	max-height: 75px;
+    height: 50px;
+    float: left;
+    vertical-align: middle;
 }
-
 header {
+    padding: 15px 15px;
 	background: white;
-	padding: 15px 15px;
 }
-
-#nav {
-	list-style: none;
+.nav a {
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-family: "Lato Regular", sans-serif;
+    padding: 15px 25px 15px 15px;
+    color: #690DAF;
+}
+topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a:hover {
+  background-color: #c2aad4;
+}
+#LYP {
+    font-weight: 700;
+    font-size: 15px;
+    font-family: "CinzelDecorative Black", serif;
+    color: #690DAF;
+}
+#slogan {
+    font-weight: 700;
+    font-size: 35px;
+    font-family: "CinzelDecorative Black", serif;
+}
+p, h2, h1, nav.text-center {
+    text-align: center;
+}
+.homepage-cta a {
 	display: block;
-}
-
-#nav li {
-	display: inline;
 	text-decoration: none;
 }
-
-.LYP {
-	text-align: center;
-	font-weight: 700;
+.btn {
+  border: 2px solid #690DAF;
+  background-color: transparent;
+  color: #690DAF;
+  padding: 15px 15px;
+  font-size: 24px;
+	font-family: "Lato Regular", sans-serif;
+  margin:auto;
+  display:block;
+	position: fixed;
+	bottom: 0;
+	left: 42%;
 }
