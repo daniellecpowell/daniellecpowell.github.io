@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Lato');
+	
+body, html {
+  height: 100%;
+	margin: 0;
+}
+.bg {
+  background-image: url("../images/kansas-city-photographer-katz-family-portraits-16-lyp.jpg");
+	opacity: .85;
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#logo {
+    height: 50px;
+    float: left;
+    vertical-align: middle;
+}
+header {
+    padding: 15px 15px;
+	background: white;
+}
+.nav a {
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    padding: 15px 25px 15px 15px;
+    color: #690DAF;
+}
+topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav a:hover {
+  background-color: #c2aad4;
+}
+#LYP {
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Cinzel Decorative', cursive;
+	letter-spacing: .5em;
+    color: #064A65;
+	text-shadow: 0px 0px .25px black;
+}
+#slogan {
+    font-weight: 700;
+    font-size: 2em;
+    font-family: 'Cinzel Decorative', cursive;
+	letter-spacing: .125em;
+	color: white;
+	text-shadow: 0px 0px 2px black;
+}
+p, h2, h1, nav.text-center {
+    text-align: center;
+	font-family: 'lato', sans-serif;
+	font-size: 1.5em;
+	color: #064A65;
+}
+h3 {
+	text-align: center;
+	font-family: 'lato', sans-serif;
+	font-weight: 100 ;
+	font-size: 2em;
+	color: #064A65;
+}
+.homepage-cta a {
+	display: block;
+	text-decoration: none;
+	text-shadow: 0px 0px 1px black;
+	color: white;
+}
+.btn {
+  border: 2px solid white;
+	box-shadow: 0px 0px 1px black;
+  background-color: rgba(105, 13, 175, .25);
+  color: white;
+  padding: 15px 15px;
+  font-size: 24px;
+	font-family: 'Lato', sans-serif;
+  margin:auto;
+  display:block;
+	position: fixed;
+	bottom: 0;
+	left: 42%;
+}
+.main {
+    height: 60%;
+    width: 100%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
