@@ -248,7 +248,11 @@ opacity: 0;
 		/*start delete*/
     background-color: #E89C6C;
     border: 1px black solid;
-    padding: 20px;/*end delete*/
+	/*end delete*/
+}
+#article p {
+	padding: 0 16.5em;
+	line-height: 1.6em;
 }
 footer {
     /*start delte*/
