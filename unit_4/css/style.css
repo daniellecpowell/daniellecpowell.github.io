@@ -1,99 +1,229 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Lato');
-	
-body, html {
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Lato|Lato:100|Lato:300|Lato:400');
+html, body {
   height: 100%;
-	margin: 0;
+	margin: 0 auto;
 }
-.bg {
-  background-image: url("../images/kansas-city-photographer-katz-family-portraits-16-lyp.jpg");
-	opacity: .85;
+#wrapper1 {
+	text-align: center;
+	height: 100%;
+}
+
+
+
+.bg-image {
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: .85;
+	display: block;
+}
+
+/* Images used */
+.img1 { background-image: url("/images/kansas-city-photographer-engagement-couples-portrait-west-bottoms-18-lyp.jpg"); }
+.img2 { background-image: url("/images/kansas-city-photographer-katz-family-portraits-16-lyp.jpg"); }
+.img3 { background-image: url("img_lights.jpg"); }
+.img4 { background-image: url("img_nature.jpg"); }
+.img5 { background-image: url("img_forest.jpg"); }
+.img6 { background-image: url("img_woods.jpg"); }
+
+
+
+
+header {
+    background: white;
+	display: block;
+    padding: .5em 1em;
 }
 #logo {
-    height: 50px;
-    float: left;
-    vertical-align: middle;
+    position: absolute;
+	top: 1em;
+	left: 1em;
+	margin: -1.15em 0px 0px -1em;
 }
-header {
-    padding: 15px 15px;
-	background: white;
+.logo-responsive {
+    height: auto;
+	width: auto;
+	max-height: 2em;
+	max-width: 2em;
 }
-.nav a {
+nav a {
     text-decoration: none;
     display: inline-block;
     list-style: none;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
-    padding: 15px 25px 15px 15px;
     color: #690DAF;
+	padding: .25em .75em;
 }
-topnav {
-  position: fixed;
-  top: 0;
-  width: 100%;
+#navtop {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+	max-height: 15%;
+	text-align: center;
 }
 nav a:hover {
-  background-color: #c2aad4;
+    background-color: #A9F9EA;
+	padding: .25em .75em;
+}
+nav a:active {
+  border: 1px solid #A9F9EA;
 }
 #LYP {
     font-weight: 700;
-    font-size: 1em;
+    font-size: .75em;
     font-family: 'Cinzel Decorative', cursive;
-	letter-spacing: .5em;
+    letter-spacing: .5em;
     color: #064A65;
-	text-shadow: 0px 0px .25px black;
+    text-shadow: 0px 0px .25px black;
+	padding-top: 1em;
 }
 #slogan {
     font-weight: 700;
     font-size: 2em;
     font-family: 'Cinzel Decorative', cursive;
-	letter-spacing: .125em;
-	color: white;
-	text-shadow: 0px 0px 2px black;
+    letter-spacing: .125em;
+    color: white;
+    text-shadow: 0px 0px 2px black;
 }
-p, h2, h1, nav.text-center {
+h1, h2, p, nav.text-center, ul {
     text-align: center;
-	font-family: 'lato', sans-serif;
-	font-size: 1.5em;
-	color: #064A65;
-}
-h3 {
-	text-align: center;
-	font-family: 'lato', sans-serif;
-	font-weight: 100 ;
-	font-size: 2em;
-	color: #064A65;
+    font-family: 'lato', sans-serif;
+    font-size: 1.5em;
+    color: #064A65;
 }
 .homepage-cta a {
-	display: block;
-	text-decoration: none;
-	text-shadow: 0px 0px 1px black;
-	color: white;
+    display: block;
+    text-decoration: none;
+    color: #054B66;
 }
 .btn {
-  border: 2px solid white;
-	box-shadow: 0px 0px 1px black;
-  background-color: rgba(105, 13, 175, .25);
-  color: white;
-  padding: 15px 15px;
-  font-size: 24px;
-	font-family: 'Lato', sans-serif;
-  margin:auto;
-  display:block;
+    border: 1px solid #054B66;
+    box-shadow: 0px 0px 1px black;
+    background-color: #A9F9EA;
+    padding: 15px 15px;
+    font-size: 24px;
+	font-weight: 300;
+    margin: auto;
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    left: 42%;
+}
+.btn:hover, .btn:hover a {
+	background-color: #690DAF;
+	border-color: white;
+	color: white;
+	display: block;
+	font-weight: 400;
+}
+h3 {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 100;
+    color: #064A65;
+	letter-spacing: .2em;
+	font-size: 2em;
+	margin-right: -2.65em;
+}
+span.center {
+	display: inline-block;
+    margin: 0 auto;
+	width: 500px;
+}
+/*width for span.center needs adjustment to center to full width*/
+.container {
+	position: absolute;
+    top: 50%;
+    left: 45%;
+	text-align: center;
+	transform: translateX(-50%, -50%);
+}
+.animated-words {
+    font-size: 3em;
+	font-family: 'Cinzel Decorative', cursive;
+    font-weight: 100;
+    color: #064A65;
+}
+.animated-words span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-animation: animateWord 17s linear infinite 0s;
+    -ms-animation: animateWord 17s linear infinite 0s;
+    animation: animateWord 17s linear infinite 0s;
+}
+.animated-words span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+}
+.animated-words span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.animated-words span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s;
+}
+.animated-words span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.animated-words span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
+}
+@-webkit-keyframes animateWord {
+ 0% {
+opacity: 0;
+}
+ 2% {
+opacity: 0;
+-webkit-transform: translateY(-30px);
+}
+ 5% {
+opacity: 1;
+-webkit-transform: translateY(0px);
+}
+ 17% {
+opacity: 1;
+-webkit-transform: translateY(0px);
+}
+ 20% {
+opacity: 0;
+-webkit-transform: translateY(30px);
+}
+ 80% {
+opacity: 0;
+}
+ 100% {
+opacity: 0;
+}
+}
+
+
+
+footer {
+	    background: white;
+	display: block;
+    padding: .5em 1em;
+}
+#navbottom {
 	position: fixed;
-	bottom: 0;
-	left: 42%;
+    bottom: 0;
+	max-height: 15%;
+	text-align: center;
 }
-.main {
-    height: 60%;
-    width: 100%;
-    display: table;
+footer p {
+	text-align: center;
+	font-size: .75em;
 }
-.wrapper {
-    display: table-cell;
-    height: 100%;
-    vertical-align: middle;
+footer ul {
+	display: inline;
 }
