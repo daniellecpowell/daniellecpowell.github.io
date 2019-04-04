@@ -1,51 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Lato|Lato:100|Lato:300|Lato:400');
 html, body {
-  height: 100%;
-	margin: 0 auto;
+    height: 100%;
+    margin: 0 auto;
 }
 #wrapper1 {
-	text-align: center;
-	height: 100%;
+    text-align: center;
+    height: 100%;
 }
-
-
-
-.bg-image {
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .85;
-	display: block;
+.img {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    opacity: .85;
+    display: block;
 }
-
 /* Images used */
-.img1 { background-image: url("/images/kansas-city-photographer-engagement-couples-portrait-west-bottoms-18-lyp.jpg"); }
-.img2 { background-image: url("/images/kansas-city-photographer-katz-family-portraits-16-lyp.jpg"); }
-.img3 { background-image: url("img_lights.jpg"); }
-.img4 { background-image: url("img_nature.jpg"); }
-.img5 { background-image: url("img_forest.jpg"); }
-.img6 { background-image: url("img_woods.jpg"); }
-
-
-
-
+#img1 {
+    background-image: url("../images/kansas-city-photographer-engagement-couples-portrait-west-bottoms-18-lyp.jpg");
+	z-index: -1;
+}
+#img2 {
+    background-image: url("../images/kansas-city-photographer-katz-family-portraits-16-lyp.jpg");
+}
+#img3 {
+    background-image: url("../images/kansas-city-photographer-men-male-solo-individual-lifestyle-portrait-14-lyp.jpg");
+}
+#img4 {
+    background-image: url("../images/kansas-city-photographer-newborn-baby-children-portrait-travel-theme-dr-seuss-globe-suitcase-13-lyp.jpg");
+}
+#img5 {
+    background-image: url("../images/kansas-city-photographer-women-female-solo-individual-lifestyle-portrait-5-lyp.jpg");
+}
+#img6 {
+    background-image: url("../images/lawrence-kansas-university-campus-graduation-photos-13-lyp.jpg");
+}
 header {
-    background: white;
-	display: block;
-    padding: .5em 1em;
+    display: block;
+    /*   padding: .5em 1em;   */
+	/*start delete*/
+    background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;/*end delete*/
 }
 #logo {
     position: absolute;
-	top: 1em;
-	left: 1em;
-	margin: -1.15em 0px 0px -1em;
+    top: 1em;
+    left: 1em;
+    margin: -1.15em 0px 0px -1em;
 }
 .logo-responsive {
     height: auto;
-	width: auto;
-	max-height: 2em;
-	max-width: 2em;
+    width: auto;
+    max-height: 2em;
+    max-width: 2em;
+}
+/*start delete*/
+nav {
+    background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+}
+/*end delete*/
+div, section {
+    background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
 }
 nav a {
     text-decoration: none;
@@ -54,30 +74,33 @@ nav a {
     font-size: 20px;
     font-family: 'Lato', sans-serif;
     color: #690DAF;
-	padding: .25em .75em;
+    padding: .25em .75em;
 }
 #navtop {
-	position: -webkit-sticky;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
-	max-height: 15%;
-	text-align: center;
+    max-height: 15%;
+    text-align: center;
 }
 nav a:hover {
     background-color: #A9F9EA;
-	padding: .25em .75em;
+    padding: .25em .75em;
 }
 nav a:active {
-  border: 1px solid #A9F9EA;
+    border: 1px solid #A9F9EA;
+}
+div.top {
+    z-index: 1;
 }
 #LYP {
     font-weight: 700;
     font-size: .75em;
     font-family: 'Cinzel Decorative', cursive;
     letter-spacing: .5em;
-    color: #064A65;
+    color: white;
     text-shadow: 0px 0px .25px black;
-	padding-top: 1em;
+    padding-top: 2em;
 }
 #slogan {
     font-weight: 700;
@@ -87,12 +110,30 @@ nav a:active {
     color: white;
     text-shadow: 0px 0px 2px black;
 }
-h1, h2, p, nav.text-center, ul {
+h2, p, nav.text-center, ul {
     text-align: center;
     font-family: 'lato', sans-serif;
     font-size: 1.5em;
     color: #064A65;
 }
+h1 {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 1.5em;
+    color: #064A65;
+    text-shadow: 0px 0px .125px black;
+}
+h3 {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 100;
+    color: white;
+    letter-spacing: .2em;
+    font-size: 2em;
+    margin-right: -2em;
+    text-shadow: 0px 0px .125px black;
+}
+/*Homepage CTA*/
 .homepage-cta a {
     display: block;
     text-decoration: none;
@@ -104,47 +145,39 @@ h1, h2, p, nav.text-center, ul {
     background-color: #A9F9EA;
     padding: 15px 15px;
     font-size: 24px;
-	font-weight: 300;
+    font-weight: 300;
     margin: auto;
     display: block;
     position: fixed;
     bottom: 25px;
     left: 42%;
+    z-index: 1;
 }
 .btn:hover, .btn:hover a {
-	background-color: #690DAF;
-	border-color: white;
-	color: white;
-	display: block;
-	font-weight: 400;
-}
-h3 {
-    text-align: center;
-    font-family: 'Cinzel Decorative', cursive;
-    font-weight: 100;
-    color: #064A65;
-	letter-spacing: .2em;
-	font-size: 2em;
-	margin-right: -2.65em;
+    background-color: #690DAF;
+    border-color: white;
+    color: white;
+    display: block;
+    font-weight: 400;
 }
 span.center {
-	display: inline-block;
+    display: inline-block;
     margin: 0 auto;
-	width: 500px;
 }
-/*width for span.center needs adjustment to center to full width*/
+/*Homepage Text Effect*/
 .container {
-	position: absolute;
-    top: 50%;
-    left: 45%;
-	text-align: center;
-	transform: translateX(-50%, -50%);
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    text-align: center;
+    transform: translateX(-50%, -50%);
 }
 .animated-words {
     font-size: 3em;
-	font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cinzel Decorative', cursive;
     font-weight: 100;
-    color: #064A65;
+    color: white;
+    text-shadow: 0px 0px 1px black;
 }
 .animated-words span {
     position: absolute;
@@ -186,18 +219,22 @@ opacity: 0;
  2% {
 opacity: 0;
 -webkit-transform: translateY(-30px);
+transform: translateY(-30px);
 }
  5% {
 opacity: 1;
 -webkit-transform: translateY(0px);
+ transform: translateY(0px);
 }
  17% {
 opacity: 1;
 -webkit-transform: translateY(0px);
+ transform: translateY(0px);
 }
  20% {
 opacity: 0;
 -webkit-transform: translateY(30px);
+ transform: translateY(30px);
 }
  80% {
 opacity: 0;
@@ -206,24 +243,33 @@ opacity: 0;
 opacity: 0;
 }
 }
-
-
-
+#article {
+    /*   padding: 7em 7em;   */
+		/*start delete*/
+    background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;/*end delete*/
+}
 footer {
-	    background: white;
-	display: block;
-    padding: .5em 1em;
-}
-#navbottom {
-	position: fixed;
+    /*start delte*/
+    background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+    /*end delete*/
+    display: block;
+    /*   padding: .5em 1em;   */
+    position: static;
     bottom: 0;
-	max-height: 15%;
-	text-align: center;
+    width: 100%;
+    max-height: 3em;
+    text-align: center;
+    z-index: 2;
+    font-size: .75em;
 }
-footer p {
-	text-align: center;
-	font-size: .75em;
+footer li {
+    display: inline;
+    padding: 0 2em;
 }
-footer ul {
-	display: inline;
+sup {
+    font-size: .125em;
 }
