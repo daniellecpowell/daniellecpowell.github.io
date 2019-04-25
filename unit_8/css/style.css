@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cinzel+Decorative:700|Cinzel+Decorative:900|Lato|Lato:100|Lato:300|Lato:400');
+html, body {
+    height: 100%;
+	width: 100%;
+    margin: 0 auto;
+	font-size: 16px;
+}
+#wrapper1 {
+    text-align: center;
+}
+
+header {
+    display: block;
+	padding: .5em 1em;
+}
+#logo {
+    position: absolute;
+    top: 1.25em;
+    left: 1.25em;
+    margin: -1.15em 0px 0px -1em;
+}
+.logo-responsive {
+    height: auto;
+    width: auto;
+    max-height: 2em;
+    max-width: 2em;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    font-size: 1.25em;
+    font-family: 'Lato', sans-serif;
+    color: #690DAF;
+    padding: .5em .75em;
+}
+
+#navtop {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+	left: 0;
+	width:100%;
+    text-align: center;
+	background-color: white;
+	display: block;
+	box-shadow: -0.1em 0px .25em black;
+	z-index: 999;
+}
+nav a:hover {
+    background-color: #A9F9EA;
+    padding: .25em .75em;
+}
+nav a:active {
+    border: 0.063em solid #A9F9EA;
+}
+#LYP {
+    font-weight: 700;
+    font-size: .75em;
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: .5em;
+    color: white;
+    text-shadow: 0px 0px 0.016em black;
+    padding-top: 2em;
+	position: absolute;
+	text-align: center;
+	display: block;
+	top: 3em;
+	left: 20%;
+	right: 20%;
+}
+
+#slogan {
+    font-weight: 700;
+    font-size: 2em;
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: .125em;
+    color: white;
+    text-shadow: 0px 0px 0.125em black;
+}
+p {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 1.5em;
+    color: #064A65;
+}
+h1 {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 1.5em;
+    color: #064A65;
+    text-shadow: 0px 0px 0.008em black;
+}
+h2 {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 1.25em;
+    color: #064A65;
+    text-shadow: 0px 0px 0.008em black;
+}
+h4 {
+	font-weight: 700;
+    font-size: 1.85em;
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: .125em;
+    color: white;
+    text-shadow: 0px 0px 0.125em black;
+}
+.servicesleft {
+	float: left;
+	display: block;
+	position: absolute;
+	left: 20%;
+}
+
+.servicesright {
+	float: right;
+	display: block;
+	position: absolute;
+	right: 20%;
+}
+
+#h3LYP {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 100;
+    color: white;
+    letter-spacing: .2em;
+    font-size: 2em;
+    text-shadow: 0px 0px 0.008em black;
+}
+/*Homepage CTA*/
+.homepage-cta a {
+    display: block;
+    text-decoration: none;
+    color: #054B66;
+}
+.btn {
+    border: .008em solid #054B66;
+    box-shadow: 0px 0px .008em black;
+    background-color: #A9F9EA;
+    padding: 0px 0px;
+    font-size: 1.5em;
+    font-weight: 300;
+	margin: 0 auto; 
+    text-align: center;
+  	display: inline-block;
+    position: fixed;
+	height: 3em;
+	width: 12em;
+	top: 79%;
+    bottom: 15%;
+	
+	left: 50%;
+	margin-left: -9%;
+	right: 50%;
+	margin-right: -9%;
+	
+    z-index: 1;
+}
+
+.btn:hover, .btn:hover a {
+    background-color: #690DAF;
+    border-color: white;
+    color: white;
+    display: block;
+    font-weight: 300;
+}
+
+#front {
+	display: block;
+	position: absolute;
+	top: 6em;
+	left: 15%;
+	right: 15%;
+}
+
+
+/*Background Image Transition*/
+#slideshow {
+	display: block;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+.back-slideshow,
+.back-slideshow:after { 
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+	z-index: -1;
+	padding: 0px 0px;
+}
+.back-slideshow:after { 
+    content: '';
+    background: repeat top left; 
+	background: transparent;
+}
+
+.back-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+
+.back-slideshow li {
+	list-style:none;
+}
+
+.back-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+    bottom: 35%;
+	top: 35%;
+    width: 100%;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 36s linear infinite 0s; 
+}
+.back-slideshow li div h3 { 
+    font-family: 'Cinzel Decorative', cursive;
+	font-size: 3em;
+    padding: 0;
+    font-weight: 700;
+	line-height: 2em;
+    color: white;
+    text-shadow: 0px 0px 0.063em black;
+	text-align: center;
+}
+
+
+.back-slideshow li:nth-child(1) span { 
+    background-image: url("../images/kansas-city-photographer-katz-family-portraits-16-lyp-purple-img1.jpg"); 
+}
+.back-slideshow li:nth-child(2) span { 
+    background-image: url("../images/kansas-city-photographer-newborn-baby-children-portrait-travel-theme-dr-seuss-globe-suitcase-13-lyp-purple-img2.jpg");
+    animation-delay: 6s; 
+}
+.back-slideshow li:nth-child(3) span { 
+    background-image: url("../images/kansas-city-photographer-engagement-couples-portrait-west-bottoms-18-lyp-purple-img3.jpg");
+    animation-delay: 12s; 
+}
+.back-slideshow li:nth-child(4) span { 
+    background-image: url("../images/kansas-city-photographer-women-female-solo-individual-lifestyle-portrait-5-lyp-purple-img4.jpg");
+    animation-delay: 18s; 
+}
+.back-slideshow li:nth-child(5) span { 
+    background-image: url("../images/kansas-city-photographer-men-male-solo-individual-lifestyle-portrait-14-lyp-purple-img5.jpg");
+    animation-delay: 24s; 
+}
+.back-slideshow li:nth-child(6) span { 
+    background-image: url("../images/lawrence-kansas-university-campus-graduation-photos-13-lyp-purple-img6.jpg");
+    animation-delay: 30s; 
+}
+
+.back-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.back-slideshow li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.back-slideshow li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+.back-slideshow li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+.back-slideshow li:nth-child(6) div { 
+    animation-delay: 30s; 
+}
+
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+.two_column {
+	height: 70vh;
+	width: 70%;
+	margin: 0 auto;
+	padding: 15vh 0px;
+	display: block;
+	overflow: hidden;
+}
+
+.left {
+    float: left;
+    width: 40%;
+	overflow: hidden;
+	margin: 0 5%;
+}
+
+.right {
+    float: right;   
+    width: 40%;
+	overflow: hidden;
+	margin: 0 5%;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+
+hr {
+	border: solid .5em blueviolet;
+}
+
+#imageme {
+	width: 75%;
+	margin: 0 auto;
+}
+
+
+
+#article p {
+	line-height: 1.6em;
+	text-align: center;
+}
+
+#article {
+	display: block;
+	max-width: 46em;
+	padding: 2em 2em 11em 2em;
+	margin: 0 auto;
+}
+
+
+
+footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
+	background-color: white;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0px 0px;
+	font-size: .75em;
+	list-style: none;
+}
+footer ul {
+	padding-inline-start: 0px;
+	margin: .5em 0px;
+	}
+#c2019 {
+	font-size: .75em;
+	padding: 0px 0px;
+	text-align: center;
+	margin: .25em 0px;
+}
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+	#article {
+	display: block;
+	padding: 2em 2em 11em 2em;
+}
+	.btn {
+    border: .008em solid #054B66;
+    box-shadow: 0px 0px .008em black;
+    background-color: #A9F9EA;
+    padding: 0px 0px;
+    font-size: 1.5em;
+    font-weight: 300;
+	margin: 0 auto; 
+    text-align: center;
+  	display: inline-block;
+    position: fixed;
+	height: 3em;
+	width: 12em;
+	top: 79%;
+    bottom: 15%;
+	left: 50%;
+	margin-left: -9.5%;
+	right: 50%;
+	margin-right: -9.5%;
+    z-index: 1;
+}
+	h4 {
+		max-width: 3em;
+	}
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1606px){
+	#slogan {
+    max-width: 20em;
+	margin: 0 auto;
+}
+	#article {
+    padding: 2em 2em 15em 2em;
+}
+}
+
+
+	
+@media only screen and (max-width: 1000px){
+	.left {
+   	 float: none;
+   	 width: 100%;
+   	 overflow: hidden;
+}
+	.right {
+   	 float: none;
+   	 width: 100%;
+   	 overflow: hidden;
+}
+		
+}
