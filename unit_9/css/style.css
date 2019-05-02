@@ -550,11 +550,40 @@ footer ul {
 }
 
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 360px) {
 	#article {
 		padding: 5% 5% 26% 5%;
 	}
+		.btn {
+    bottom: 10%;
+	}
+	.two_column {
+	width: 100%;
 }
+
+.two_column div {
+	width: 95%;
+	padding-bottom: 15%;
+}
+		
+	#h3LYP {
+		font-size: .5em;
+		width: 100%;
+		margin: 0 auto;
+	}
+	#front {
+		top: 20vh;
+		left: 0;
+		right: 0;
+	}
+	#slogn {
+		font-size: .75em;
+	}
+	#navtop {
+	height: auto;
+	}
+}
+
 
 
 @media only screen and (max-width: 300px) {
