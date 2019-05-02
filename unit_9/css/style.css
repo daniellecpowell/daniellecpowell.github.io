@@ -57,6 +57,10 @@ nav a:hover {
 nav a:active {
     border: 0.063em solid #A9F9EA;
 }
+
+.navtop img:hover {
+	background-color: #ffffff;
+}
 #LYP {
     font-weight: 700;
     font-size: .75em;
@@ -504,18 +508,11 @@ footer ul {
 
 @media only screen and (max-width: 590px) {
 	#article {
-		padding: 5% 5% 15% 5%;
+		padding: 5% 5% 17% 5%;
 	}
 }
 
 
-
-
-@media only screen and (max-width: 550px) {
-	#article {
-		padding: 5% 5% 16% 5%;
-	}
-}
 
 
 @media only screen and (max-width: 475px) {
@@ -595,7 +592,7 @@ footer ul {
 	}
 	.two_column div {
 		display: block;
-		width: 80%;
+		width: 90%;
 	}
 	#imageme {
 	width: 75%;
@@ -608,17 +605,41 @@ footer ul {
 
 @media only screen and (max-width: 568px){
 
-	nav a {
-    display: block;
-    padding: 2% auto;
-	}
+
 	#navtop {
-	display: block;
-	height: auto;
+	height: 8vh;
 	}
+	
+	
+	#slogan {
+	    width: auto;
+		font-size: 1.75em;
+	}
+	
+	#LYP {
+		top: 8vh;
+		width: auto;
+		margin: 0;
+		left: 0;
+		right: 0;
+	}
+	#front {
+		top: 15vh;
+	}
+	
+	#h3LYP {
+		font-size: 1.75em;
+	}
+	
+	#logo {
+    top: 23%;
+    left: 1%;
+		margin: 0 0;
+	}
+	
+	nav a {
+		padding: .25em .75em;
+	}
+	
 }
-
-
-
-
 
