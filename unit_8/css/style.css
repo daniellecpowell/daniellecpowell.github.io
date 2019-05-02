@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Cinzel+Decorative:700|Cinzel+Decorative:900|Lato|Lato:100|Lato:300|Lato:400');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 html, body {
-    height: 100%;
 	width: 100%;
-    margin: 0 auto;
 	font-size: 16px;
 }
 #wrapper1 {
@@ -105,6 +108,7 @@ h4 {
     letter-spacing: .125em;
     color: white;
     text-shadow: 0px 0px 0.125em black;
+	padding-top: 1em;
 }
 .servicesleft {
 	float: left;
@@ -148,14 +152,9 @@ h4 {
     position: fixed;
 	height: 3em;
 	width: 12em;
-	top: 79%;
-    bottom: 15%;
-	
+    bottom: 10%;
 	left: 50%;
-	margin-left: -9%;
-	right: 50%;
-	margin-right: -9%;
-	
+	transform: translateX(-50%);
     z-index: 1;
 }
 
@@ -309,10 +308,9 @@ h4 {
 
 
 .two_column {
-	height: 70vh;
 	width: 70%;
 	margin: 0 auto;
-	padding: 15vh 0px;
+	padding-top: 15vh;
 	display: block;
 	overflow: hidden;
 }
